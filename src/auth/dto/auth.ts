@@ -1,10 +1,12 @@
-import { IsString, IsEmail, MinLength } from 'class-validator'; // Você precisará instalar
+import { IsString, IsEmail, MinLength, IsNotEmpty } from 'class-validator'; // Você precisará instalar
 
 export class SignUpDTO {
   @IsString()
+  @IsNotEmpty()
   name: string;
 
   @IsEmail()
+  @IsNotEmpty()
   email: string;
 
   @IsString()
