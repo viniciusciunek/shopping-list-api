@@ -9,7 +9,7 @@ import {
 } from '@nestjs/common';
 import { SignInDTO, SignUpDTO } from './dto/auth';
 import { AuthService } from './auth.service';
-import { AuthGuard } from './auth.guard';
+import { AuthGuard } from './guards/auth.guard';
 import {
   ApiBearerAuth,
   ApiOperation,
