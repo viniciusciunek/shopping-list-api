@@ -14,7 +14,7 @@ A API foi construída utilizando o framework **NestJS** e integra um banco de da
 
 A API está disponível publicamente no seguinte endereço:
 
-- **URL da API:** `https://shopping-list-api-2m.onrender.com`
+- **URL da API:** `https://shopping-list-api-ri2m.onrender.com/v1/`
 
 ## 🛠️ Instruções de Execução
 
@@ -99,14 +99,12 @@ O diagrama abaixo representa a estrutura e os relacionamentos entre as entidades
 
 [Diagrama ERD](https://dbdiagram.io/d/shopping-list-api-68aba7ff1e7a6119675fa9e2)
 
-<iframe width="560" height="315" src='https://dbdiagram.io/e/68aba7ff1e7a6119675fa9e2/68aba82e1e7a6119675faceb'> </iframe>
-
 ## 📚 Documentação Swagger
 
 A documentação completa e interativa dos endpoints da API, gerada com Swagger (OpenAPI), está disponível em:
 
 - **Localmente:** Após iniciar a aplicação, acesse `http://localhost:3000/api`
-- **Em Produção:** `https://shopping-list-api-2m.onrender.com/api`
+- **Em Produção:** `https://shopping-list-api-ri2m.onrender.com/api`
 
 ## ✅ Checklist | Indicadores de Desempenho (ID) dos Resultados de Aprendizagem (RA)
 
