@@ -14,7 +14,7 @@ A API foi construída utilizando o framework **NestJS** e integra um banco de da
 
 A API está disponível publicamente no seguinte endereço:
 
-- **URL da API:** `work in progress...`
+- **URL da API:** `https://shopping-list-api-2m.onrender.com`
 
 ## 🛠️ Instruções de Execução
 
@@ -106,7 +106,7 @@ O diagrama abaixo representa a estrutura e os relacionamentos entre as entidades
 A documentação completa e interativa dos endpoints da API, gerada com Swagger (OpenAPI), está disponível em:
 
 - **Localmente:** Após iniciar a aplicação, acesse `http://localhost:3000/api`
-- **Em Produção:** `work in progress...`
+- **Em Produção:** `https://shopping-list-api-2m.onrender.com/api`
 
 ## ✅ Checklist | Indicadores de Desempenho (ID) dos Resultados de Aprendizagem (RA)
 
@@ -142,8 +142,10 @@ A documentação completa e interativa dos endpoints da API, gerada com Swagger 
 
 - [x] **ID14:** O aluno integrou corretamente o Swagger à API, gerando a documentação completa e interativa dos endpoints, parâmetros e respostas da API, com exemplos de requisições e respostas.
   - _Status: Concluído. A documentação foi gerada com Swagger, está acessível via /api, e os DTOs e endpoints estão devidamente documentados._
-- [ ] **ID15:** O aluno realizou o deploy da API em uma plataforma de hospedagem na nuvem (ex.: Render.com, Heroku, Vercel, etc.), garantindo que la API estivesse acessível publicamente.
-- [ ] **ID16:** O aluno garantiu que a API funcionasse corretamente no ambiente de produção, incluindo a documentação Swagger e o banco de dados.
+- [x] **ID15:** O aluno realizou o deploy da API em uma plataforma de hospedagem na nuvem (ex.: Render.com, Heroku, Vercel, etc.), garantindo que a API estivesse acessível publicamente.
+  - _Status: Concluído. A API foi publicada com sucesso na plataforma Render.com e está acessível publicamente._
+- [x] **ID16:** O aluno garantiu que a API funcionasse corretamente no ambiente de produção, incluindo a documentação Swagger e o banco de dados.
+  - _Status: Concluído. A API, o banco de dados e a documentação Swagger foram testados e estão funcionando corretamente no ambiente de produção._
 - [x] **ID17:** O aluno realizou a configuração correta de variáveis de ambiente usando o ConfigModule do NestJS.
   - _Status: Concluído. O `ConfigModule` foi implementado para carregar as variáveis de ambiente de forma segura e padronizada._
 - [ ] **ID18:** O aluno implementou corretamente o versionamento de APIs REST no NestJS, assegurando que diferentes versões da API pudessem coexistir.
