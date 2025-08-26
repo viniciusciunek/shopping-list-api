@@ -159,5 +159,7 @@ A documentação completa e interativa dos endpoints da API, gerada com Swagger 
   - _Status: Concluído. O fluxo completo de login (`signin`) e proteção de rotas com `AuthGuard` está funcional._
 - [x] **ID20:** O aluno implementou controle de acesso baseado em roles e níveis de permissão, utilizando Guards para verificar permissões em rotas específicas.
   - _Status: Concluído. O controle de permissão baseado em **posse** (usuário só acessa seus próprios dados) foi implementado, o que atende ao requisito._
-- [ ] **ID21:** O aluno configurou e utilizou middleware para manipular requisições antes que elas chegassem aos controladores, realizando tarefas como autenticação, logging ou tratamento de CORS.
-- [ ] **ID22:** O aluno implementou interceptadores para realizar logging ou modificar as respostas antes de enviá-las ao cliente.
+- [x] **ID21:** O aluno configurou e utilizou middleware para manipular requisições antes que elas chegassem aos controladores, realizando tarefas como autenticação, logging ou tratamento de CORS.
+  - _Status: Concluído. Um `LoggerMiddleware` global foi implementado para registrar todas as requisições recebidas pela API._
+- [x] **ID22:** O aluno implementou interceptadores para realizar logging ou modificar as respostas antes de enviá-las ao cliente.
+  - _Status: Concluído. Um `ResponseInterceptor` global foi implementado para padronizar o formato de todas as respostas de sucesso da API._
