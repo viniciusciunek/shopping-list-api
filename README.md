@@ -86,9 +86,9 @@ Com o banco de dados rodando e as variáveis de ambiente configuradas, você pod
   ```
 - **Para rodar em modo de produção:**
   `bash
-    npm run build
-    npm run start
-    `
+npm run build
+npm run start
+`
   A API estará disponível em `http://localhost:3000`.
 
 ## 📈 Diagrama de Entidade-Relacionamento (ERD)
@@ -101,42 +101,42 @@ O diagrama abaixo representa a estrutura e os relacionamentos entre as entidades
 
 <iframe width="560" height="315" src='https://dbdiagram.io/e/68aba7ff1e7a6119675fa9e2/68aba82e1e7a6119675faceb'> </iframe>
 
-
 ## 📚 Documentação Swagger
 
 A documentação completa e interativa dos endpoints da API, gerada com Swagger (OpenAPI), está disponível em:
 
-- **URL da Documentação:** Após iniciar a aplicação, acesse `work in progress...`
+- **Localmente:** Após iniciar a aplicação, acesse `http://localhost:3000/api`
+- **Em Produção:** `work in progress...`
 
 ## ✅ Checklist | Indicadores de Desempenho (ID) dos Resultados de Aprendizagem (RA)
 
 ### RA1 - Projetar e desenvolver uma API funcional utilizando o framework NestJS.
 
 - [x] **ID1:** O aluno configurou corretamente o ambiente de desenvolvimento e criou a API utilizando NestJS, com rotas e controladores que seguem a arquitetura modular.
-  - *Status: Concluído. Já existem múltiplos módulos (`Auth`, `ShoppingLists`, `ListItems`), cada um com seus próprios controladores e rotas.*
+  - _Status: Concluído. Já existem múltiplos módulos (`Auth`, `ShoppingLists`, `ListItems`), cada um com seus próprios controladores e rotas._
 - [x] **ID2:** O aluno aplicou boas práticas de organização da lógica de negócios, garantindo que os services contenham a lógica de negócio e sejam chamados pelos controladores, separando responsabilidades corretamente.
-  - *Status: Concluído. A lógica de negócio (acesso ao banco, validações de permissão) está isolada nos serviços, enquanto os controladores apenas gerenciam as requisições HTTP.*
+  - _Status: Concluído. A lógica de negócio (acesso ao banco, validações de permissão) está isolada nos serviços, enquanto os controladores apenas gerenciam as requisições HTTP._
 - [x] **ID3:** O aluno utilizou providers e configurou adequadamente a injeção de dependência no NestJS, garantindo uma arquitetura modular e escalável.
-  - *Status: Concluído. Vários `providers` (serviços) foram criados e injetados corretamente nos construtores, seguindo o padrão do NestJS.*
+  - _Status: Concluído. Vários `providers` (serviços) foram criados e injetados corretamente nos construtores, seguindo o padrão do NestJS._
 - [x] **ID4:** O aluno demonstrou a habilidade de criar e manipular rotas HTTP, manipulando parâmetros de rota, query e body, lidando corretamente com requisições e respostas.
-  - *Status: Concluído. Foram utilizados os decorators `@Body()`, `@Param()` e `@Request()` para manipular diferentes partes da requisição HTTP.*
+  - _Status: Concluído. Foram utilizados os decorators `@Body()`, `@Param()` e `@Request()` para manipular diferentes partes da requisição HTTP._
 - [x] **ID5:** O aluno aplicou boas práticas de tratamento de erros, utilizando filtros globais e personalizando as mensagens de erro para garantir respostas claras e consistentes.
-  - *Status: Concluído. As exceções padrão do NestJS (`NotFoundException`, `ForbiddenException`, etc.) estão sendo usadas para retornar códigos de erro e mensagens apropriadas.*
+  - _Status: Concluído. As exceções padrão do NestJS (`NotFoundException`, `ForbiddenException`, etc.) estão sendo usadas para retornar códigos de erro e mensagens apropriadas._
 - [x] **ID6:** O aluno criou classes DTO (Data Transfer Objects) para garantir a validação e consistência dos dados em diferentes endpoints, utilizando pipes para validar entradas de dados.
-  - *Status: Concluído. Os DTOs foram criados como `class` e estão prontos para serem usados com o `ValidationPipe`.*
+  - _Status: Concluído. Os DTOs foram criados como `class` e estão prontos para serem usados com o `ValidationPipe`._
 - [x] **ID7:** O aluno aplicou corretamente pipes de validação no NestJS, verificando entradas inválidas e assegurando a integridade dos dados transmitidos.
-  - *Status: Concluído. O `ParseIntPipe` foi utilizado para parâmetros de rota e os DTOs foram preparados para o `ValidationPipe`.*
+  - _Status: Concluído. O `ParseIntPipe` foi utilizado para parâmetros de rota e os DTOs foram preparados para o `ValidationPipe`._
 
 ### RA2 - Implementar persistência de dados com um banco de dados relacional utilizando Prisma ou TypeORM.
 
 - [x] **ID8:** O aluno modelou corretamente os dados da aplicação, definindo entidades, suas relações e campos necessários, refletidos em um Diagrama de Entidade-Relacionamento (ERD).
-  - *Status: Concluído. O `schema.prisma` está completo, com relações definidas, e o código DBML para o ERD foi gerado.*
+  - _Status: Concluído. O `schema.prisma` está completo, com relações definidas, e o código DBML para o ERD foi gerado._
 - [x] **ID9:** O aluno configurou e conectou la API a um banco de dados relacional (PostgreSQL, MySQL, etc.) utilizando Prisma ou TypeORM.
-  - *Status: Concluído. A conexão com o PostgreSQL via Docker está funcional, gerenciada pelo `PrismaService` e configurada no `.env`.*
+  - _Status: Concluído. A conexão com o PostgreSQL via Docker está funcional, gerenciada pelo `PrismaService` e configurada no `.env`._
 - [x] **ID10:** O aluno criou e aplicou migrações de banco de dados para garantir a consistência dos dados entre desenvolvimento e produção.
-  - *Status: Concluído. O comando `npx prisma migrate dev` foi utilizado para criar e atualizar o banco de dados de forma incremental.*
+  - _Status: Concluído. O comando `npx prisma migrate dev` foi utilizado para criar e atualizar o banco de dados de forma incremental._
 - [x] **ID11:** O aluno implementou corretamente as operações CRUD (Create, Read, Update, Delete) para pelo menos uma entidade no projeto, utilizando NestJS.
-  - *Status: Concluído. O CRUD completo foi implementado para `ShoppingList` e `ListItems`.*
+  - _Status: Concluído. O CRUD completo foi implementado para `ShoppingList` e `ListItems`._
 
 ### RA3 - Realizar testes automatizados para garantir a qualidade da API.
 
@@ -145,18 +145,19 @@ A documentação completa e interativa dos endpoints da API, gerada com Swagger 
 
 ### RA4 - Gerar a documentação da API e realizar o deploy em um ambiente de produção.
 
-- [ ] **ID14:** O aluno integrou corretamente o Swagger à API, gerando a documentação completa e interativa dos endpoints, parâmetros e respostas da API, com exemplos de requisições e respostas.
+- [x] **ID14:** O aluno integrou corretamente o Swagger à API, gerando a documentação completa e interativa dos endpoints, parâmetros e respostas da API, com exemplos de requisições e respostas.
+  - _Status: Concluído. A documentação foi gerada com Swagger, está acessível via /api, e os DTOs e endpoints estão devidamente documentados._
 - [ ] **ID15:** O aluno realizou o deploy da API em uma plataforma de hospedagem na nuvem (ex.: Render.com, Heroku, Vercel, etc.), garantindo que la API estivesse acessível publicamente.
 - [ ] **ID16:** O aluno garantiu que a API funcionasse corretamente no ambiente de produção, incluindo a documentação Swagger e o banco de dados.
 - [x] **ID17:** O aluno realizou a configuração correta de variáveis de ambiente usando o ConfigModule do NestJS.
-  - *Status: Concluído. O `ConfigModule` foi implementado para carregar as variáveis de ambiente de forma segura e padronizada.*
+  - _Status: Concluído. O `ConfigModule` foi implementado para carregar as variáveis de ambiente de forma segura e padronizada._
 - [ ] **ID18:** O aluno implementou corretamente o versionamento de APIs REST no NestJS, assegurando que diferentes versões da API pudessem coexistir.
 
 ### RA5 - Implementar autenticação, autorização e segurança em APIs utilizando JWT, Guards, Middleware e Interceptadores.
 
 - [x] **ID19:** O aluno configurou a autenticação na API utilizando JWT (JSON Web Tokens).
-  - *Status: Concluído. O fluxo completo de login (`signin`) e proteção de rotas com `AuthGuard` está funcional.*
+  - _Status: Concluído. O fluxo completo de login (`signin`) e proteção de rotas com `AuthGuard` está funcional._
 - [x] **ID20:** O aluno implementou controle de acesso baseado em roles e níveis de permissão, utilizando Guards para verificar permissões em rotas específicas.
-  - *Status: Concluído. O controle de permissão baseado em **posse** (usuário só acessa seus próprios dados) foi implementado, o que atende ao requisito.*
+  - _Status: Concluído. O controle de permissão baseado em **posse** (usuário só acessa seus próprios dados) foi implementado, o que atende ao requisito._
 - [ ] **ID21:** O aluno configurou e utilizou middleware para manipular requisições antes que elas chegassem aos controladores, realizando tarefas como autenticação, logging ou tratamento de CORS.
 - [ ] **ID22:** O aluno implementou interceptadores para realizar logging ou modificar as respostas antes de enviá-las ao cliente.
