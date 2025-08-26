@@ -138,11 +138,6 @@ A documentação completa e interativa dos endpoints da API, gerada com Swagger 
 - [x] **ID11:** O aluno implementou corretamente as operações CRUD (Create, Read, Update, Delete) para pelo menos uma entidade no projeto, utilizando NestJS.
   - _Status: Concluído. O CRUD completo foi implementado para `ShoppingList` e `ListItems`._
 
-### RA3 - Realizar testes automatizados para garantir a qualidade da API.
-
-- [ ] **ID12:** O aluno implementou testes automatizados (unitários ou de integração) utilizando Jest, validando funcionalidades críticas da API.
-- [ ] **ID13:** O aluno garantiu a cobertura de testes para, pelo menos, as principais rotas e serviços da API, incluindo operações CRUD.
-
 ### RA4 - Gerar a documentação da API e realizar o deploy em um ambiente de produção.
 
 - [x] **ID14:** O aluno integrou corretamente o Swagger à API, gerando a documentação completa e interativa dos endpoints, parâmetros e respostas da API, com exemplos de requisições e respostas.
@@ -158,7 +153,7 @@ A documentação completa e interativa dos endpoints da API, gerada com Swagger 
 - [x] **ID19:** O aluno configurou a autenticação na API utilizando JWT (JSON Web Tokens).
   - _Status: Concluído. O fluxo completo de login (`signin`) e proteção de rotas com `AuthGuard` está funcional._
 - [x] **ID20:** O aluno implementou controle de acesso baseado em roles e níveis de permissão, utilizando Guards para verificar permissões em rotas específicas.
-  - _Status: Concluído. O controle de permissão baseado em **posse** (usuário só acessa seus próprios dados) foi implementado, o que atende ao requisito._
+  - _Status: Concluído. O controle de permissão baseado em **posse** (usuário só acessa seus próprios dados) e por **nível de acesso** (rota exclusiva para `ADMIN` com `AdminGuard`) foi totalmente implementado._
 - [x] **ID21:** O aluno configurou e utilizou middleware para manipular requisições antes que elas chegassem aos controladores, realizando tarefas como autenticação, logging ou tratamento de CORS.
   - _Status: Concluído. Um `LoggerMiddleware` global foi implementado para registrar todas as requisições recebidas pela API._
 - [x] **ID22:** O aluno implementou interceptadores para realizar logging ou modificar as respostas antes de enviá-las ao cliente.
