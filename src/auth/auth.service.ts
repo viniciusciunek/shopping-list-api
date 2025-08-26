@@ -28,9 +28,10 @@ export class AuthService {
 
     const user = await this.prismaService.user.create({
       data: {
-        ...data,
+        name: data.name,
+        email: data.email,
         password: pwd,
-        role: 'admin',
+        role: 'USER',
       },
     });
 
