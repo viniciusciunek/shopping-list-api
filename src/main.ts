@@ -1,11 +1,16 @@
 import { NestFactory } from '@nestjs/core';
 import { AppModule } from './app.module';
-import { ValidationPipe } from '@nestjs/common';
+import { ValidationPipe, VersioningType } from '@nestjs/common';
 import { DocumentBuilder, SwaggerModule } from '@nestjs/swagger';
 import { ResponseInterceptor } from './common/interceptors/response.interceptor';
 
 async function bootstrap() {
   const app = await NestFactory.create(AppModule);
+
+    app.enableVersioning({
+        type: VersioningType.URI,
+        defaultVersion: '1'
+    })
 
   // isso aqui faz com que as rotas da API possam ser validadas durante as chamadas.
   app.useGlobalPipes(new ValidationPipe());
