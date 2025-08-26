@@ -5,6 +5,7 @@ import { ShoppingListsModule } from './shopping-lists/shopping-lists.module';
 import { ListItemsModule } from './list-items/list-items.module';
 import { ConfigModule } from '@nestjs/config';
 import { LoggerMiddleware } from './common/middleware/logger.middleware';
+import { UsersModule } from './users/users.module';
 
 @Module({
   imports: [
@@ -13,6 +14,7 @@ import { LoggerMiddleware } from './common/middleware/logger.middleware';
     PrismaModule,
     ShoppingListsModule,
     ListItemsModule,
+    UsersModule,
   ],
   controllers: [],
   providers: [],

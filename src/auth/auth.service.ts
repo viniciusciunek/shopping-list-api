@@ -31,7 +31,7 @@ export class AuthService {
         name: data.name,
         email: data.email,
         password: pwd,
-        role: 'USER',
+        role: 'ADMIN',
       },
     });
 
@@ -64,6 +64,7 @@ export class AuthService {
       id: user.id,
       name: user.name,
       email: user.email,
+      role: user.role,
     });
 
     return {

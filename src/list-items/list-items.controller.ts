@@ -13,7 +13,7 @@ import {
 import { ListItemsService } from './list-items.service';
 import { CreateListItemDto } from './dto/create-list-item.dto';
 import { UpdateListItemDto } from './dto/update-list-item.dto';
-import { AuthGuard } from 'src/auth/auth.guard';
+import { AuthGuard } from 'src/auth/guards/auth.guard';
 import {
   ApiBearerAuth,
   ApiOperation,
