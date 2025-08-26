@@ -148,7 +148,8 @@ A documentação completa e interativa dos endpoints da API, gerada com Swagger 
   - _Status: Concluído. A API, o banco de dados e a documentação Swagger foram testados e estão funcionando corretamente no ambiente de produção._
 - [x] **ID17:** O aluno realizou a configuração correta de variáveis de ambiente usando o ConfigModule do NestJS.
   - _Status: Concluído. O `ConfigModule` foi implementado para carregar as variáveis de ambiente de forma segura e padronizada._
-- [ ] **ID18:** O aluno implementou corretamente o versionamento de APIs REST no NestJS, assegurando que diferentes versões da API pudessem coexistir.
+- [x] **ID18:** O aluno implementou corretamente o versionamento de APIs REST no NestJS, assegurando que diferentes versões da API pudessem coexistir.
+  - _Status: Concluído. A API foi configurada para usar versionamento via URI, com todas as rotas sob o prefixo `/v1`._
 
 ### RA5 - Implementar autenticação, autorização e segurança em APIs utilizando JWT, Guards, Middleware e Interceptadores.
 
